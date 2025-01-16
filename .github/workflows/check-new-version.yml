@@ -14,8 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.REPO_SCOPED_TOKEN }}
       - name: Fetch ATOM Feed
         uses: Promptly-Technologies-LLC/rss-fetch-action@ecefea274f0618de6d45353cf9b73355873e89db
         with:
